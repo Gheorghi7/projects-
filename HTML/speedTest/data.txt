@@ -1,0 +1,6 @@
+{"Download": "568.06", "Upload": "29.14"}
+{"Download": "569.06", "Upload": "29.36"}
+{"Download": "565.75", "Upload": "29.24"}
+{"Download": "568.94", "Upload": "29.24"}
+{"Download": "555.36", "Upload": "29.16"}
+{'DataTime': '27,12,2023 13:27:27', 'Download': '557.06', 'Upload': '29.24'}
