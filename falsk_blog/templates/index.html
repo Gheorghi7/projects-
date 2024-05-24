@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style/css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <div class="title"><h1>My Blog</h1></div>
+    </div>
+    <div class="content">
+        <div class="card">
+            {%for i in data:%}
+                {%if i['id'] == 1:%}
+                    <h1>{{data[i['id']-1]['title']}}</h1>
+                    <p class="text">{{data[i['id']-1]['subtitle']}} </p>
+                     <a href="{{url_for('post', id=i['id'])}}">Read</a>
+                {% endif %}
+                {% endfor %}
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+           {%for i in data:%}
+                {%if i['id'] == 2:%}
+                    <h2>{{data[i['id']-1]['title']}}</h2>
+                    <p class="text">{{data[i['id']-1]['subtitle']}} </p>
+                     <a href="{{url_for('post', id=i['id'])}}">Read</a>
+                {% endif %}
+                {% endfor %}
+
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <p>Made with ♥️ in London.</p>
+</footer>
+</html>
